@@ -7,7 +7,6 @@ import HelpButton from "../Buttons/HelpButton";
 import citiesList from "../../data/citiesList.json";
 
 export default function SolicitationDestiny() {
-  
   const optionsCitiesList = citiesList.map(city => {
     return <option>{city.destination}</option>;
   });
@@ -30,9 +29,10 @@ export default function SolicitationDestiny() {
 
         <div className="buttonHolder">
           <Button>seguir com a solicitação</Button>
-          <HelpButton>estou com problema</HelpButton>
+          <HelpButton message="a%20seleção%20do%20destino">
+            estou com problema
+          </HelpButton>
         </div>
-
       </div>
     </main>
   );

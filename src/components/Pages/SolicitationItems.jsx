@@ -49,8 +49,8 @@ export default function SolicitationItems() {
 
         <div className="buttonHolder">
           <AddButton>adicionar à solicitação</AddButton>
-          <HelpButton>estou com problema</HelpButton>
-          <Button>seguir com a solicitação</Button>
+          <HelpButton message="inclusão%20de%20itens">estou com problema</HelpButton>
+          <Button>finalizar solicitação</Button>
         </div>
       </div>
     </main>
