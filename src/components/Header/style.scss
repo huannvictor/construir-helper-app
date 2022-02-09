@@ -1,0 +1,14 @@
+header.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #F2F2F2;
+  height: 4.2rem;
+  width: 100vw;
+
+  h1 {
+    font-size: 1.25rem;
+    color: #696969;
+  }
+}

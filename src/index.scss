@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .loginArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 0.5rem;
+    font-size: 14px;
+
+    .loginIcon {
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      margin-bottom: 2rem;
+    }
+
+    input {
+      width: 13rem;
+      height: 2.25rem;
+      border-radius: 0.3rem;
+      outline: 0;
+      border: 1px solid #2b2b2b;
+    }
+
+    input::placeholder {
+      text-align: center;
+    }
+
+    button {
+      margin-top: 1rem;
+      width: 13rem;
+      height: 2.25rem;
+      border-radius: 0.3rem;
+      outline: 0;
+      border: 0.1rem solid #7bb985;
+      background-color: #7bb985;
+      color: #fcfcfc;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    .destinationForm {
+      height: calc(100vh - 7.7rem);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+      padding-top: 3.5rem;
+
+      // background-color: red;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        // width: calc(100vw - 2,5rem);
+        flex-grow: 1;
+        gap: 0.5rem;
+
+        label {
+          color: #696969;
+          font-size: 0.875rem;
+
+          span {
+            font-size: 0.625rem;
+          }
+        }
+
+        select {
+          width: 18rem;
+          height: 2.5rem;
+          border: 0.07rem solid #c4c4c4;
+        }
+
+        input {
+          height: 2.5rem;
+          border: 0.07rem solid #c4c4c4;
+        }
+      }
+
+      .buttonHolder {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 0.5rem;
+      }
+    }
+  }
+}
