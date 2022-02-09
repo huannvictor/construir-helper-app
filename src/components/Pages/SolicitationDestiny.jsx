@@ -4,18 +4,19 @@ import Header from "../Header/Header";
 import Button from "../Buttons/Button";
 import HelpButton from "../Buttons/HelpButton";
 
-import citiesList from "../../data/CitiesList.json";
+import citiesList from "../../data/citiesList.json";
 
 export default function SolicitationDestiny() {
+  
   const optionsCitiesList = citiesList.map(city => {
     return <option>{city.destination}</option>;
   });
 
   return (
-    <main className="destinySolicitation">
+    <main>
       <Header />
 
-      <div className="destinationForm">
+      <div className="formContainer">
         <form action="">
           <label htmlFor="destination">
             Destino: <span>(ultima cidade da rota)</span>
