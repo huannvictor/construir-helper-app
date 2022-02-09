@@ -8,7 +8,13 @@ import citiesList from "../../data/citiesList.json";
 
 export default function SolicitationDestiny() {
   const optionsCitiesList = citiesList.map(city => {
-    return <option>{city.destination}</option>;
+    let k = Math.random();
+    return (
+      <option key={k}>
+        {city.destination}
+      </option>);
+
+    
   });
 
   return (

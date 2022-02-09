@@ -5,7 +5,7 @@ import SolicitationItems from "./components/Pages/SolicitationItems.jsx";
 function App() {
   return (
     <div className="App">
-      <SolicitationDestiny />
+      <SolicitationItems />
     </div>
   );
 }

@@ -7,20 +7,32 @@ import HelpButton from "../Buttons/HelpButton";
 
 import unitList from "../../data/unitList.json";
 import itemList from "../../data/itemsList.json";
-import segmentList from "../../data/segmentList.json"
+import segmentList from "../../data/segmentList.json";
 
 export default function SolicitationItems() {
   const OptionsUnitList = unitList.map(unit => {
-    return <option>{unit.unit}</option>;
+    let k = Math.random();
+    return (
+    <option key={k}>
+      {unit.unit}
+    </option>);
   });
 
   const OptionsItemList = itemList.map(item => {
-    return <option>{item.item}</option>;
+    let k = Math.random();
+    return (
+    <option key={k}>
+      {item.item}
+    </option>);
   });
 
   const OptionsSegmentList = segmentList.map(segment => {
-    return <option>{segment.segment}</option>
-  })
+    let k = Math.random();
+    return (
+    <option key={k}>
+      {segment.segment}
+    </option>);
+  });
 
   return (
     <main>
@@ -49,7 +61,9 @@ export default function SolicitationItems() {
 
         <div className="buttonHolder">
           <AddButton>adicionar à solicitação</AddButton>
-          <HelpButton message="inclusão%20de%20itens">estou com problema</HelpButton>
+          <HelpButton message="inclusão%20de%20itens">
+            estou com problema
+          </HelpButton>
           <Button>finalizar solicitação</Button>
         </div>
       </div>
