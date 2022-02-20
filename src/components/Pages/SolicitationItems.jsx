@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 
 import Header from "../Header/Header";
 import Button from "../Buttons/Button";
@@ -11,12 +11,12 @@ import itemList from "../../data/itemsList.json";
 import segmentList from "../../data/segmentList.json";
 
 export default function SolicitationItems() {
-  const [formData, setFormData] = useState({
-    amount: 0,
-    unit: "",
-    item: "",
-    segment: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   amount: 0,
+  //   unit: "",
+  //   item: "",
+  //   segment: "",
+  // });
 
   function handleClick(event) {
     console.log(event.target);

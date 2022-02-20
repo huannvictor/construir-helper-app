@@ -1,13 +1,17 @@
-import Login from "./components/Pages/Login"
-import SolicitationDestiny from "./components/Pages/SolicitationDestiny.jsx";
-import SolicitationItems from "./components/Pages/SolicitationItems.jsx";
+import React from "react";
 
-function App() {
+import { Routes, Route } from "react-router-dom";
+
+import Login from "./components/Pages/Login/Login";
+import SolicitationDestiny from "./components/Pages/SolicitationDestiny";
+import SolicitationItems from "./components/Pages/SolicitationItems";
+
+export default function App() {
   return (
-    <div className="App">
-      <SolicitationItems />
-    </div>
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="destino" element={<SolicitationDestiny />} />
+      <Route path="itens" element={<SolicitationItems />} />
+    </Routes>
   );
 }
-
-export default App;
