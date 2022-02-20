@@ -13,8 +13,6 @@ export default function SolicitationDestiny() {
       <option key={k}>
         {city.destination}
       </option>);
-
-    
   });
 
   return (
